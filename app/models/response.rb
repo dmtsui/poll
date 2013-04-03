@@ -25,8 +25,8 @@ class Response < ActiveRecord::Base
 
   def not_author
     if poll.author_id == responder_id
-      errors[:responder_id] << "You wrote this question..."
-    end
+      errors[:responder_id] << "You wrote this question..." #REV: Might want to change this to make it more grammartical.
+    end                                         #As Responder will be prefixed onto the front when the error appears.
   end
 
 end

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   has_many :responses, :foreign_key => "responder_id"
 
   def create_poll(poll_name)
-
+    
   end
 
 
