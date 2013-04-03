@@ -5,8 +5,8 @@ class Question < ActiveRecord::Base
   has_many :responses, :through => :choices
   belongs_to :poll
 
-  # def list_responses
-  #   {self.body => self.responses.group("body").count}
-  # end
+   def list_responses
+     {self.body => self.responses.group("body").count}
+  end
 end
 
